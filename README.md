@@ -7,13 +7,15 @@ Recently, during a key sales period, FoodNest experienced ongoing failures in it
 
 Key Issues:
 
-# Out-of-Sync Inventory Management Real-time inventory updates are crucial; however, CI/CD pipeline failures resulted in a bug preventing proper synchronization with the backend system.
+## Out-of-Sync Inventory Management: 
+Real-time inventory updates are crucial; however, CI/CD pipeline failures resulted in a bug preventing proper synchronization with the backend system.
 Impact: Customers ordered out-of-stock items, leading to cancellations and dissatisfaction. They were misled about item availability, resulting in lost sales.
 
-# Order Tracking Failures: The app offers real-time updates on order status. Failures in the CI/CD pipeline disrupted integration with the tracking system, causing users to miss critical updates about their orders.
+## Order Tracking Failures: 
+The app offers real-time updates on order status. Failures in the CI/CD pipeline disrupted integration with the tracking system, causing users to miss critical updates about their orders.
 Impact: This lack of updates led to user anxiety and frustration, increased customer service inquiries, and possibly resulted in order cancellations.
 
-#Proposed Solutions
+## Proposed Solutions
 * Enhanced Monitoring: Implement robust monitoring and alerting systems to identify and resolve pipeline failures quickly.
 
 * Automated Rollback: Establish automated rollback mechanisms to revert to the last stable version in case of deployment failures.
